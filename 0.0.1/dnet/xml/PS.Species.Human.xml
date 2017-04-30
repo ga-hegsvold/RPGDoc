@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/HTML.Species.xsl"?>
+<rpg:Species xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ../../xsd/Species.xsd" xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<rpg:header>
+		<rpg:author>
+			<rpg:personname>
+				<rpg:firstname>Geir Atle</rpg:firstname>
+				<rpg:surname>Hegsvold</rpg:surname>
+			</rpg:personname>
+		</rpg:author>
+		<rpg:system>DragonNet RPG</rpg:system>
+		<rpg:setting>Planescape</rpg:setting>
+		<rpg:version>1.0</rpg:version>
+	</rpg:header>
+	<rpg:name>Human</rpg:name>
+	<rpg:image>../img/boba_fett.jpg</rpg:image>
+	<rpg:description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</rpg:description>
+	<rpg:playable>Yes</rpg:playable>
+	<rpg:cost>0</rpg:cost>
+	<rpg:age rpg:unit="years">80</rpg:age>
+	<rpg:height rpg:unit="m">1.8</rpg:height>
+	<rpg:weight rpg:unit="kg">80.0</rpg:weight>
+	<rpg:size-rating>0</rpg:size-rating>
+	<rpg:attribute-list>
+		<rpg:name>Mental Talents</rpg:name>
+		<rpg:Attribute>
+			<rpg:name>Intelligence</rpg:name>
+			<rpg:abbr>INT</rpg:abbr>
+			<rpg:value>0</rpg:value>
+			<rpg:description>I.Q.</rpg:description>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Perception</rpg:name>
+			<rpg:abbr>PER</rpg:abbr>
+			<rpg:value>+1</rpg:value>
+			<rpg:description>See this?</rpg:description>
+		</rpg:Attribute>
+	</rpg:attribute-list>
+	<rpg:attribute-list>
+		<rpg:name>Physical Talents</rpg:name>
+		<rpg:Attribute>
+			<rpg:name>Agility</rpg:name>
+			<rpg:abbr>AGI</rpg:abbr>
+			<rpg:value>+2</rpg:value>
+			<rpg:description>Dodge this!</rpg:description>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Strength</rpg:name>
+			<rpg:abbr>STR</rpg:abbr>
+			<rpg:value>-3</rpg:value>
+			<rpg:description>My fist - your face!</rpg:description>
+		</rpg:Attribute>
+	</rpg:attribute-list>
+	<rpg:culture-list>
+		<rpg:Culture>
+			<rpg:name>Some culture</rpg:name>
+			<rpg:description>String</rpg:description>
+		</rpg:Culture>
+		<rpg:Culture>
+			<rpg:name>Some other culture</rpg:name>
+			<rpg:description>String</rpg:description>
+		</rpg:Culture>
+		<rpg:Culture>
+			<rpg:name>Yet another culture</rpg:name>
+			<rpg:description>String</rpg:description>
+		</rpg:Culture>
+	</rpg:culture-list>
+</rpg:Species>

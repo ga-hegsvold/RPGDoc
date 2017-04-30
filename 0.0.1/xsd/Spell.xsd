@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Geir Atle Hegsvold (Intrum Justitia AS) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1">
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<xs:include schemaLocation="Skill.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Spell" type="rpg:SpellType"/>
+	<!-- ============================== -->
+	<!--Complex Types-->
+	<!-- ============================== -->
+	<xs:complexType name="SpellType">
+		<xs:sequence>
+			<xs:element ref="rpg:header" minOccurs="0"/>
+			<xs:element ref="rpg:name"/>
+			<xs:element name="casting-time" type="xs:string"/>
+			<xs:element name="range" type="xs:string"/>
+			<xs:element name="duration" type="xs:string"/>
+			<xs:element name="volume-of-effect" type="xs:string"/>
+			<xs:element name="source-list" type="rpg:specialty-listType"/>
+			<xs:element name="conductor-list" type="rpg:specialty-listType"/>
+			<xs:element ref="rpg:description"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

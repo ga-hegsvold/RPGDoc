@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+<fo:layout-master-set>
+
+	<fo:simple-page-master master-name="A4"
+	 page-width="210mm" page-height="297mm" 
+	 margin-top="1cm"   margin-bottom="1cm"
+	 margin-left="1cm"  margin-right="1cm">
+		<fo:region-body   margin="3cm"/>
+		<fo:region-before extent="2cm"/>
+		<fo:region-after  extent="2cm"/>
+		<fo:region-start  extent="2cm"/>
+		<fo:region-end    extent="2cm"/>
+	</fo:simple-page-master>
+
+	<fo:simple-page-master master-name="dnet"
+	 page-width="210mm" page-height="297mm" 
+	 margin-top="1cm"   margin-bottom="1cm"
+	 margin-left="1cm"  margin-right="1cm">
+		<fo:region-body   margin="3cm"/>
+		<fo:region-before region-name="xsl-region-before-dnet" extent="2cm"/>
+		<fo:region-after  extent="2cm"/>
+		<fo:region-start  extent="2cm"/>
+		<fo:region-end    extent="2cm"/>
+	</fo:simple-page-master>
+
+</fo:layout-master-set>
+<!--
+<fo:page-sequence master-reference="dnet">
+	<fo:flow flow-name="xsl-region-before">
+		<fo:block border-width="1mm">Header</fo:block>
+	</fo:flow>
+</fo:page-sequence>
+-->
+<fo:page-sequence master-reference="dnet">
+ <fo:static-content flow-name="xsl-region-before-dnet">
+    <fo:block text-align="center" font-size="10pt">
+    TEI Lite: An Introduction to Text Encoding for
+    Interchange</fo:block>
+  </fo:static-content>
+</fo:page-sequence>
+
+<!--
+<fo:page-sequence master-reference="dnet">
+  <fo:flow flow-name="xsl-region-before-dnet">
+    <fo:block border-width="5mm">Hello W3Schools</fo:block>
+  </fo:flow>
+</fo:page-sequence>
+-->
+
+</fo:root>
+

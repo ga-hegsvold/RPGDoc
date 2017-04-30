@@ -1,0 +1,23 @@
+TODO:
+Namespace
+	rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc"
+	db=DocBook namespace
+
+* Make a working version with RPGDoc as root element in an XML instance.
+
+============================================================
+
+DONE:
+
+2013-10-06:
+* Remove the 'avg' in Species/avg-height, avg-weight and avg-lifespan; Basically reuse the elements defined in Character.xsd. Moved definitions to Species.xsd.
+* Rename Abilities to Traits (corresponds to Gifts/Flaws in DNet)
+
+2013-09-23:
+* Project structure:
+- RPGDoc/<version>/
+			xsd/											structure	( common for all systems )
+- RPGDoc/<version>/<system>/
+			xml/<setting>.<template>.<identification>.xml	source		( system and setting specific )	( ex: PS.Species.Human.xml )
+			css/<setting>.<template>.css					style		( system and setting specific )	( ex: PS.Species.css )
+			xsl/<format>.<template>.xsl						layout		( system specific )				( ex: HTML.Species.xsl )

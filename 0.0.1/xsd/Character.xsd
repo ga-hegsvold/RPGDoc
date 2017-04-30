@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Geir Atle Hegsvold (Intrum Justitia AS) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1">
+	<!-- ============================== -->
+	<!-- Revision log:
+
+	0.0.1.2013.10.06:
+		* Moved age, height and weigth to Species.
+			From a Character perspective Character/Species/age will determine the character's age.
+			From a Species perspective Species/age will determine the species average lifespan.
+			Same goes for the other elements.
+		* Moved image to base.xsd to make it global. Species, Items, and other main elements may have use for it.
+
+	0.0.1.2013.09.19:
+		* Moved attribute-list definition to Species.xsd considering that a character's species is basically what defines his/her attributes
+		* Removed the group attributes in place of plain element ref to attribute-list
+		* Removed the group skills in place of plain element ref to skill-list
+	
+	0.0.1.2006.04.24:
+		* Initial version with revision
+	-->
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<xs:include schemaLocation="Campaign.xsd"/>
+	<xs:include schemaLocation="Species.xsd"/>
+	<xs:include schemaLocation="Culture.xsd"/>
+	<xs:include schemaLocation="Career.xsd"/>
+	<xs:include schemaLocation="Attribute.xsd"/>
+	<xs:include schemaLocation="Skill.xsd"/>
+	<xs:include schemaLocation="Item.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Character" type="rpg:CharacterType"/>
+	<!-- Moved to Species.xsd
+	<xs:element name="attribute-list" type="rpg:attribute-listType"/>
+	-->
+	<!-- ============================== -->
+	<!--Groups-->
+	<!-- ============================== -->
+	<!-- Depricated; use the characteristics element
+	<xs:group name="characteristics">
+		<xs:sequence>
+			<xs:element name="player" type="xs:string" minOccurs="0"/>
+			<xs:element name="game-master" type="xs:string" minOccurs="0"/>
+			<xs:element ref="rpg:name" minOccurs="0"/>
+			<xs:element ref="rpg:Campaign" minOccurs="0"/>
+			<xs:element ref="rpg:Species" minOccurs="0"/>
+			<xs:element ref="rpg:Culture" minOccurs="0"/>
+			<xs:element ref="rpg:career-list" minOccurs="0"/>
+			-->
+	<!-- These elements are moved to Species.xsd
+			<xs:element name="age" type="xs:integer" minOccurs="0"/>
+			<xs:element name="height" type="xs:float" minOccurs="0"/>
+			<xs:element name="weight" type="xs:float" minOccurs="0"/>
+			
+			<xs:element name="hair" type="xs:string" minOccurs="0"/>
+			<xs:element name="eyes" type="xs:string" minOccurs="0"/>
+			<xs:element name="gender" type="xs:string" minOccurs="0"/>
+			<xs:element name="appearance" type="xs:string" minOccurs="0"/>
+			<xs:element name="personality" type="xs:string" minOccurs="0"/>
+			<xs:element ref="rpg:image" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	-->
+	<!-- Depricated
+	<xs:group name="attributes">
+		<xs:sequence>
+			<xs:element ref="rpg:attribute-list" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:group>
+	-->
+	<xs:group name="skills">
+		<xs:sequence>
+			<xs:element ref="rpg:skill-list" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- ============================== -->
+	<!--Complex Types-->
+	<!-- ============================== -->
+	<xs:complexType name="CharacterType">
+		<xs:sequence>
+			<!--
+			<xs:group ref="rpg:header" minOccurs="0"/>
+			-->
+			<xs:element ref="rpg:header" minOccurs="0"/>
+			<xs:element name="characteristics" type="rpg:characteristicsType"/>
+			<xs:element ref="rpg:attribute-list" maxOccurs="unbounded"/>
+			<!--
+			<xs:group ref="rpg:skills"/>
+			-->
+			<xs:element ref="rpg:skill-list"/>
+			<xs:element name="background" type="xs:string" minOccurs="0"/>
+			<xs:element name="goals" type="xs:string" minOccurs="0"/>
+			<xs:element name="clothing-list" type="rpg:apparel-listType" minOccurs="0"/>
+			<xs:element name="weapon-list" type="rpg:weapon-listType" minOccurs="0"/>
+			<xs:element name="item-list" type="rpg:item-listType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="characteristicsType">
+		<xs:sequence>
+			<xs:element name="player" type="xs:string" minOccurs="0"/>
+			<xs:element name="game-master" type="xs:string" minOccurs="0"/>
+			<xs:element ref="rpg:name" minOccurs="0"/>
+			<xs:element ref="rpg:Campaign" minOccurs="0"/>
+			<xs:element ref="rpg:Species" minOccurs="0"/>
+			<xs:element ref="rpg:Culture" minOccurs="0"/>
+			<xs:element ref="rpg:career-list" minOccurs="0"/>
+			<xs:element name="hair" type="xs:string" minOccurs="0"/>
+			<xs:element name="eyes" type="xs:string" minOccurs="0"/>
+			<xs:element name="gender" type="xs:string" minOccurs="0"/>
+			<xs:element name="appearance" type="xs:string" minOccurs="0"/>
+			<xs:element name="personality" type="xs:string" minOccurs="0"/>
+			<xs:element ref="rpg:image" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<!-- Moved to Species.xsd
+	<xs:complexType name="attribute-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:name" minOccurs="0"/>
+			<xs:element ref="rpg:Attribute" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	-->
+	<!-- ============================== -->
+	<xs:complexType name="item-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:Item" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="apparel-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:Apparel" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="weapon-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:Weapon" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Geir Atle Hegsvold (Intrum Justitia AS) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1.2013.09.19">
+	<!-- ============================== -->
+	<!-- Revision log:
+
+	0.0.1.2013.09.19:
+		* Moved attribute-list definition from Character.xsd considering that a character's species is basically what defines his/her attributes
+		* Removed the group attributes in place of plain element ref to attribute-list
+	
+	0.0.1.2006.04.24:
+		* Initial version
+	-->
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<xs:include schemaLocation="Attribute.xsd"/>
+	<xs:include schemaLocation="Culture.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Species" type="rpg:SpeciesType"/>
+	<xs:element name="attribute-list" type="rpg:attribute-listType"/>
+	<xs:element name="culture-list" type="rpg:culture-listType"/>
+	<!-- ============================== -->
+	<!--Groups -->
+	<!-- ============================== -->
+	<!-- Depricated
+	<xs:group name="attributes">
+		<xs:sequence>
+			<xs:element ref="rpg:attribute-list" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:group>
+	-->
+	<!-- ============================== -->
+	<!--Complex Types -->
+	<!-- ============================== -->
+	<xs:complexType name="SpeciesType">
+		<xs:sequence>
+			<xs:group ref="rpg:header"/>
+			<xs:element ref="rpg:name"/>
+			<xs:element ref="rpg:description" minOccurs="0"/>
+			<xs:element name="playable" type="xs:string" minOccurs="0"/>
+			<xs:element name="cost" type="xs:int" minOccurs="0"/>
+			<xs:element name="avg-height" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:decimal">
+							<xs:attribute ref="rpg:unit"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="avg-weight" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:decimal">
+							<xs:attribute ref="rpg:unit"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="avg-lifespan" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:int">
+							<xs:attribute ref="rpg:unit"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="size-rating" type="xs:int" minOccurs="0"/>
+			<xs:element ref="rpg:attribute-list" minOccurs="0" maxOccurs="unbounded"/>
+			<!--xs:group ref="rpg:attributes"/-->
+			<xs:element ref="rpg:culture-list" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="attribute-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:name" minOccurs="0"/>
+			<xs:element ref="rpg:Attribute" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="culture-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:Culture" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:attribute name="unit" type="xs:string"/>
+</xs:schema>

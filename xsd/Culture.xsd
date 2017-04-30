@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by Geir Atle Hegsvold (-) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1.2006.04.24">
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<xs:include schemaLocation="Career.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Culture" type="rpg:CultureType"/>
+	<xs:element name="career-list" type="rpg:career-listType"/>
+	<!-- ============================== -->
+	<!--Complex Types-->
+	<!-- ============================== -->
+	<xs:complexType name="CultureType">
+		<xs:sequence>
+			<xs:element ref="rpg:name"/>
+			<xs:element ref="rpg:career-list" minOccurs="0"/>
+			<xs:element ref="rpg:description" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="career-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:Career" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

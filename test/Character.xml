@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/Character.xslt"?>
+<Character xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ../xsd/Character.xsd">
+	<player>GAH</player>
+	<game-master>Eru</game-master>
+	<name>Boba Fett</name>
+	<Campaign>
+		<title>The Greatest Campaign</title>
+	</Campaign>
+	<Species>
+		<name>Human</name>
+	</Species>
+	<Culture>
+		<name>Civilized</name>
+	</Culture>
+	<career-list>
+		<Career>
+			<name>Generalist</name>
+		</Career>
+		<Career>
+			<name>Specialist</name>
+		</Career>
+	</career-list>
+	<age>20</age>
+	<hair>None</hair>
+	<eyes>Blue</eyes>
+	<gender>Male</gender>
+	<height>1.9</height>
+	<weight>94.6</weight>
+	<appearance>Got the looks only a mother could stand.</appearance>
+	<personality>Nice fellar. Never drop'd nobody lest they had it commin'.</personality>
+	<image>../images/boba_fett.jpg</image>
+	<attribute-list>
+		<name>Physical</name>
+		<Attribute>
+			<name>Fitness</name>
+			<abbr>FIT</abbr>
+			<value>5</value>
+		</Attribute>
+		<Attribute>
+			<name>Body</name>
+			<abbr>BOD</abbr>
+			<value>5</value>
+		</Attribute>
+		<Attribute>
+			<name>Manual Dexterity</name>
+			<abbr>DEX</abbr>
+			<value>5</value>
+		</Attribute>
+		<Attribute>
+			<name>Strength</name>
+			<abbr>STR</abbr>
+			<value>5</value>
+		</Attribute>
+		<Attribute>
+			<name>Agility</name>
+			<abbr>AGI</abbr>
+			<value>2</value>
+		</Attribute>
+	</attribute-list>
+	<attribute-list>
+		<name>Mental</name>
+		<Attribute>
+			<name>Aura</name>
+			<abbr>AUR</abbr>
+			<value>-5</value>
+		</Attribute>
+		<Attribute>
+			<name>Intelligence</name>
+			<abbr>INT</abbr>
+			<value>-5</value>
+		</Attribute>
+		<Attribute>
+			<name>Perception</name>
+			<abbr>PER</abbr>
+			<value>4</value>
+		</Attribute>
+		<Attribute>
+			<name>Psyche</name>
+			<abbr>PSY</abbr>
+			<value>5</value>
+		</Attribute>
+		<Attribute>
+			<name>Willpower</name>
+			<abbr>WIL</abbr>
+			<value>-2</value>
+		</Attribute>
+	</attribute-list>
+	<skill-list>
+		<Skill>
+			<name>Linguistics</name>
+			<training>0</training>
+			<level>0</level>
+			<specialty-list>
+				<Specialty>
+					<name>Planespeak</name>
+					<training>20</training>
+					<level>2</level>
+				</Specialty>
+				<Specialty>
+					<name>Koine Sophias</name>
+					<training>10</training>
+					<level>1</level>
+				</Specialty>
+			</specialty-list>
+		</Skill>
+		<Skill>
+			<name>Combat, Close</name>
+			<training>10</training>
+			<level>1</level>
+			<specialty-list>
+				<Specialty>
+					<name>1-H Weapons</name>
+					<training>10</training>
+					<level>1</level>
+				</Specialty>
+				<Specialty>
+					<name>2-H Weapons</name>
+					<training>20</training>
+					<level>2</level>
+				</Specialty>
+			</specialty-list>
+		</Skill>
+		<Skill>
+			<name>Jump</name>
+			<training>10</training>
+			<level>1</level>
+			<specialty-list>
+				<Specialty>
+					<name>Long distance</name>
+					<training>30</training>
+					<level>3</level>
+				</Specialty>
+			</specialty-list>
+		</Skill>
+		<Skill>
+			<name>Acrobatics</name>
+			<training>10</training>
+			<level>1</level>
+		</Skill>
+	</skill-list>
+	<background>The back on the ground and stir it around...</background>
+	<goals>Get to the first place, do the first thing, move to next place...</goals>
+	<clothing-list>
+		<Item>
+			<name>Mandalorian Battle Armor</name>
+			<weight>10</weight>
+			<resistance>20</resistance>
+			<quality>5</quality>
+			<description>My bed, my everyday clothing</description>
+		</Item>
+	</clothing-list>
+	<weapon-list>
+		<Item>
+			<name>Mandalorian blaster</name>
+			<range>5000</range>
+			<weight>0.5</weight>
+			<impact>10</impact>
+			<description>My best friend</description>
+		</Item>
+		<Item>
+			<name>Hand blaster</name>
+			<impact>5</impact>
+			<description>My next best friend</description>
+		</Item>
+	</weapon-list>
+	<item-list>
+		<Item>
+			<name>Rations</name>
+			<description>Foooood</description>
+		</Item>
+	</item-list>
+</Character>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by Geir Atle Hegsvold (-) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1.2006.04.24">
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Item" type="rpg:ItemType"/>
+	<!-- ============================== -->
+	<!-- Complex Types -->
+	<!-- ============================== -->
+	<xs:complexType name="ItemType">
+		<xs:sequence>
+			<xs:group ref="rpg:header" minOccurs="0"/>
+			<xs:element ref="rpg:name"/>
+			<xs:element name="length" type="xs:float" minOccurs="0"/>
+			<xs:element name="range" type="xs:integer" minOccurs="0"/>
+			<xs:element name="weight" type="xs:float" minOccurs="0"/>
+			<xs:element name="impact" type="xs:integer" minOccurs="0"/>
+			<xs:element name="resistance" type="xs:integer" minOccurs="0"/>
+			<xs:element name="quality" type="xs:integer" minOccurs="0"/>
+			<xs:element ref="rpg:description" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

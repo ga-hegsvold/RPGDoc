@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Geir Atle Hegsvold (Intrum Justitia AS) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1">
+	<!-- ============================== -->
+	<!-- Revision log:
+
+	0.0.1.2013.10.06:
+		* DEPRICATED. Renamed to Trait.
+	
+	0.0.1.2006.04.24:
+		* Initial version with revision
+	-->
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Ability" type="AbilityType">
+		<xs:annotation>
+			<xs:documentation>
+				DEPRICATED. Use Trait.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- ============================== -->
+	<!--Complex Types-->
+	<!-- ============================== -->
+	<xs:complexType name="AbilityType">
+		<xs:sequence>
+			<xs:element ref="name"/>
+			<xs:element name="cost" type="xs:integer" minOccurs="0"/>
+			<xs:element ref="description" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

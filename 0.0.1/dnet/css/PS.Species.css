@@ -1,0 +1,73 @@
+/********************
+ * elements
+ ********************/
+body {
+	background-color: #DDDDDD;
+	color: #000000;
+	font-family: calibri;
+	font-size: 10pt;
+}
+
+div.content {
+	background-color: #FFFFFF;
+	border-top: 2px solid;
+	border-right: 1px solid;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 45%;
+}
+
+h1 {
+	background-color: #EEEEEE;
+/*	border-bottom: 1px solid;*/
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.label {
+	font-size: 200%;
+	width: 100%;
+}
+
+img {
+	width: 120px;
+}
+/********************
+ * classes
+ ********************/
+.header {
+	background-color: #EEEEEE;
+	border-style: dotted;
+	border-width: 2px;
+	font-size: 8pt;
+	padding: 5px;
+	width: 15%;
+}
+
+.Species {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 5px;
+}
+
+.label {
+	font-family: exocet;
+/*
+	font-family: alien league;
+*/
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: top;
+	width: 20%;
+}
+
+.separator {
+	vertical-align: top;
+}
+
+.image {
+	text-align: right;
+	vertical-align: top;
+}

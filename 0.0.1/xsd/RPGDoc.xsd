@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by Geir Atle Hegsvold (-) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1">
+	<xs:annotation>
+		<xs:documentation>
+		RPGDoc: The RPG Documentation Project, Geir Atle Hegsvold
+		</xs:documentation>
+	</xs:annotation>
+	<!-- ============================================================ -->
+	<!--
+	Revision log:
+
+	0.0.01.2013-10-06:
+		* Added Trait
+
+	0.0.1:
+		* Reorganized project files for easier version control:
+			Project structure:
+			- RPGDoc/<version>/
+						xsd/																	structure	( common for all systems )
+			- RPGDoc/<version>/<system>/
+						xml/<setting>.<template>.<identification>.xml		source		( system and setting specific )	( ex: PS.Species.Human.xml )
+						css/<setting>.<template>.css							style			( system and setting specific )	( ex: PS.Species.css )
+						xsl/<format>.<template>.xsl								layout		( system specific )						( ex: HTML.Species.xsl )
+
+	0.0.1.2013.09.19:
+		* Moved attribute-list definition to Species.xsd considering that a character's species is basically what defines his/her attributes
+		* Removed the group attributes in place of plain element ref to attribute-list
+		* Removed the group skills in place of plain element ref to skill-list
+	
+	0.0.1.2006.04.24:
+		* Initial version with revision
+	-->
+	<!-- ============================================================ -->
+	<!-- Includes -->
+	<!-- ============================================================ -->
+	<xs:include schemaLocation="Character.xsd"/>
+	<xs:include schemaLocation="Species.xsd"/>
+	<xs:include schemaLocation="Culture.xsd"/>
+	<xs:include schemaLocation="Career.xsd"/>
+	<xs:include schemaLocation="Skill.xsd"/>
+	<xs:include schemaLocation="Attribute.xsd"/>
+	<xs:include schemaLocation="Trait.xsd"/>	
+	<xs:include schemaLocation="Campaign.xsd"/>
+	<xs:include schemaLocation="Path.xsd"/>
+	<xs:include schemaLocation="Item.xsd"/>
+	<!-- ============================================================ -->
+	<!-- Global Elements -->
+	<!-- ============================================================ -->
+	<xs:element name="RPGDoc" type="rpg:RPGDocType"/>
+	<!-- ============================================================ -->
+	<!-- Complex Types -->
+	<!-- ============================================================ -->
+	<xs:complexType name="RPGDocType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="rpg:Character" minOccurs="0"/>
+			<xs:element ref="rpg:Species" minOccurs="0"/>
+			<xs:element ref="rpg:Culture" minOccurs="0"/>
+			<xs:element ref="rpg:Career" minOccurs="0"/>
+			<xs:element ref="rpg:Skill" minOccurs="0"/>
+			<xs:element ref="rpg:Specialty" minOccurs="0"/>
+			<xs:element ref="rpg:Attribute" minOccurs="0"/>
+			<xs:element ref="rpg:Trait" minOccurs="0"/>
+			<xs:element ref="rpg:Campaign" minOccurs="0"/>
+			<xs:element ref="rpg:Adventure" minOccurs="0"/>
+			<xs:element ref="rpg:Path" minOccurs="0"/>
+			<xs:element ref="rpg:Item" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,139 @@
+/********************
+ * elements
+ ********************/
+
+body {
+
+	background-color: #DDDDDD;
+/*
+	background-image: url('../img/bg-paper-old-006.jpg');
+	background-position: left top;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+*/
+	color: #000000;
+	font-family: papyrus;
+	font-size: 10pt;
+/*
+	text-align: center;
+*/
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 25px;
+
+	width: 900px;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	width: 200px;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	padding: 5px;
+}
+/********************
+ * classes
+ ********************/
+.header {
+	background-color: #EEEEEE;
+	border-style: dotted;
+	border-width: 2px;
+	font-size: 8pt;
+	padding: 5px;
+	width: 15%;
+}
+
+.label, .label-normal {
+	font-family: exocet;
+	font-variant: small-caps;
+	font-weight: bold;
+	vertical-align: center;
+/*	width: 20%;*/
+	word-break: keep-all;
+}
+
+.label {
+	color: #DDDDDD;
+	background-color: black;
+	text-align: center;
+}
+
+.content {
+	text-align: center;
+}
+
+.characteristics {
+	text-align: center;
+	width: 100%;
+}
+
+.attributes {
+/* strange behaviour in firefox */
+	float: left;
+	text-align: center;
+	width: 33.33%;
+}
+
+.misc {
+	float: left;
+	width: 33.33%;
+}
+
+.valuables {
+	width: 33.33%;
+}
+
+.skills {
+	width: 100%;
+}
+
+.skill-group {
+	width: 30%;
+}
+
+.background {
+	float: left;
+	width: 50%;
+}
+
+.goals {
+	float: right;
+	width: 50%;
+}
+
+.apparel {
+	float: left;
+	width: 50%;
+}
+
+.weapons {
+	float: right;
+	width: 50%;
+}
+
+.title {
+	font-size: 300%;
+	width: 100%;
+}
+
+.h1 {
+	font-size: 250%;
+}
+
+.h2 {
+	font-size: 150%;
+}
+
+/* debuging */
+table, th, td {
+	border: thin solid;
+}

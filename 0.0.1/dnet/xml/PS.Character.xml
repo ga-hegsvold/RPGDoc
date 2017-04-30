@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/HTML.Character.xsl"?>
+<rpg:Character xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ..\..\xsd\Character.xsd">
+	<rpg:header>
+		<rpg:author>
+			<rpg:personname>
+				<rpg:firstname>Geir Atle</rpg:firstname>
+				<rpg:surname>Hegsvold</rpg:surname>
+			</rpg:personname>
+		</rpg:author>
+		<rpg:system>DragonNet RPG</rpg:system>
+		<rpg:setting>Planescape</rpg:setting>
+		<rpg:version>2.0</rpg:version>
+	</rpg:header>
+	<rpg:characteristics>
+		<rpg:player>GAH</rpg:player>
+		<rpg:game-master>ERU</rpg:game-master>
+		<rpg:name>Boba Fett</rpg:name>
+		<rpg:Campaign>
+			<rpg:title>The Campaign</rpg:title>
+		</rpg:Campaign>
+		<rpg:Species>
+			<rpg:name>Human</rpg:name>
+			<rpg:age rpg:unit="years">30</rpg:age>
+			<rpg:height rpg:unit="m">1.9</rpg:height>
+			<rpg:weight rpg:unit="kg">80.0</rpg:weight>
+		</rpg:Species>
+		<rpg:Culture>
+			<rpg:name>Civilized</rpg:name>
+		</rpg:Culture>
+		<rpg:career-list>
+			<rpg:Career>
+				<rpg:name>Generalist</rpg:name>
+			</rpg:Career>
+			<rpg:Career>
+				<rpg:name>Specialist</rpg:name>
+			</rpg:Career>
+		</rpg:career-list>
+		<rpg:hair>None</rpg:hair>
+		<rpg:eyes>Blue</rpg:eyes>
+		<rpg:gender>Male</rpg:gender>
+		<rpg:appearance>
+		Got the looks only a mother could stand.
+		</rpg:appearance>
+		<rpg:personality>
+		Nice fellar. Never drop'd nobody lest they had it commin'.
+		</rpg:personality>
+		<rpg:image>../img/boba_fett.jpg</rpg:image>
+	</rpg:characteristics>
+	<rpg:attribute-list>
+		<rpg:name>Mental</rpg:name>
+		<rpg:Attribute>
+			<rpg:name>Aura</rpg:name>
+			<rpg:abbr>AUR</rpg:abbr>
+			<rpg:value>-5</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Intelligence</rpg:name>
+			<rpg:abbr>INT</rpg:abbr>
+			<rpg:value>-4</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Perception</rpg:name>
+			<rpg:abbr>PER</rpg:abbr>
+			<rpg:value>-3</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Psyche</rpg:name>
+			<rpg:abbr>PSY</rpg:abbr>
+			<rpg:value>-2</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Willpower</rpg:name>
+			<rpg:abbr>WIL</rpg:abbr>
+			<rpg:value>-1</rpg:value>
+		</rpg:Attribute>
+	</rpg:attribute-list>
+	<rpg:attribute-list>
+		<rpg:name>Physical</rpg:name>
+		<rpg:Attribute>
+			<rpg:name>Agility</rpg:name>
+			<rpg:abbr>AGI</rpg:abbr>
+			<rpg:value>1</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Body</rpg:name>
+			<rpg:abbr>BOD</rpg:abbr>
+			<rpg:value>2</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Fitness</rpg:name>
+			<rpg:abbr>FIT</rpg:abbr>
+			<rpg:value>3</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Manual dexterity</rpg:name>
+			<rpg:abbr>DEX</rpg:abbr>
+			<rpg:value>4</rpg:value>
+		</rpg:Attribute>
+		<rpg:Attribute>
+			<rpg:name>Strength</rpg:name>
+			<rpg:abbr>STR</rpg:abbr>
+			<rpg:value>5</rpg:value>
+		</rpg:Attribute>
+	</rpg:attribute-list>
+	<rpg:skill-list>
+		<rpg:Skill>
+			<rpg:name>Animal Handling</rpg:name>
+			<rpg:training>6</rpg:training>
+			<rpg:level>3</rpg:level>
+			<rpg:specialty-list>
+				<rpg:Specialty>
+					<rpg:name>Dogs</rpg:name>
+					<rpg:training>3</rpg:training>
+					<rpg:level>2</rpg:level>
+				</rpg:Specialty>
+			</rpg:specialty-list>
+			<rpg:description></rpg:description>
+		</rpg:Skill>
+		<rpg:Skill>
+			<rpg:name>Alertness</rpg:name>
+			<rpg:training>1</rpg:training>
+			<rpg:level>1</rpg:level>
+			<rpg:specialty-list>
+				<rpg:Specialty>
+					<rpg:name>Ambush</rpg:name>
+					<rpg:training>6</rpg:training>
+					<rpg:level>3</rpg:level>
+				</rpg:Specialty>
+			</rpg:specialty-list>
+			<rpg:description></rpg:description>
+		</rpg:Skill>
+		<rpg:Skill>
+			<rpg:name>Craft</rpg:name>
+			<rpg:training>1</rpg:training>
+			<rpg:level>1</rpg:level>
+			<rpg:description></rpg:description>
+		</rpg:Skill>
+	</rpg:skill-list>
+</rpg:Character>

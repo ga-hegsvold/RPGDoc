@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rpg:RPGDoc
+	xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ..\..\xsd\RPGDoc.xsd"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+	<!-- 
+	<xi:include href="PS.Species.Human.xml"/>
+	-->
+</rpg:RPGDoc>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/PathHTML.xslt"?>
+<Path xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ../xsd/Path.xsd">
+	<author><firstname>John</firstname><surname>Doe</surname></author>
+	<system>DNet</system>
+	<setting>PS</setting>
+	<version>1.0</version>
+	<name>The Path</name>
+	<philosophy>The Philosophy</philosophy>
+	<path-level>
+		<name>Apprentice</name>
+		<level-number>1</level-number>
+		<description>Apprentice description</description>
+	</path-level>
+	<path-level>
+		<name>Oracle</name>
+		<level-number>5</level-number>
+		<description>Oracle description</description>
+	</path-level>
+</Path>
+

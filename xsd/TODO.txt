@@ -1,0 +1,6 @@
+2006.04.27
+Done: Rename Ability* -> Attribute*
+Done: Add element "name" to attribute-list
+Done: Make name-element global ?
+Done: -> Replace all "name"-elements with reference to the global name-element ?
+Done: Add element abbr to Attribute-element

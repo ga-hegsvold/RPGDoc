@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;mtx;rdf;smil;svg;wml">
+		<File FilePath="dnet\xml\PS.Species.Human.xml" HomeFolder="Yes"/>
+		<File FilePath="dnet\xml\RPGDoc.xml" HomeFolder="Yes"/>
+		<File FilePath="dnet\xml\PS.Character.xml" HomeFolder="Yes"/>
+		<File FilePath="dnet\xml\PS.Spell.Fireball.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="dnet\xsl\HTML.Species.xsl" HomeFolder="Yes"/>
+		<File FilePath="dnet\xsl\HTML.RPGDoc.xsl" HomeFolder="Yes"/>
+		<File FilePath="dnet\xsl\HTML.Character.xsl" HomeFolder="Yes"/>
+		<File FilePath="dnet\xsl\HTML.Attribute.xsl" HomeFolder="Yes"/>
+		<File FilePath="dnet\xsl\HTML.header.xsl" HomeFolder="Yes"/>
+		<File FilePath="dnet\xsl\SVG.Spell.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="xsd\Attribute.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\base.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Campaign.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Career.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Character.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Culture.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Item.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Path.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\RPGDoc.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Skill.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Species.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Trait.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\Spell.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+	<Folder FolderName="CSS" ExtStr="css">
+		<File FilePath="dnet\css\PS.Species.css" HomeFolder="Yes"/>
+		<File FilePath="dnet\css\PS.Character.css" HomeFolder="Yes"/>
+	</Folder>
+	<File FilePath="..\TODO.txt" HomeFolder="Yes"/>
+	<ExtMountFolder FolderName="dnet"/>
+</Project>

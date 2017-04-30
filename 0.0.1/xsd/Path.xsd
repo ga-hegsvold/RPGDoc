@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by Geir Atle Hegsvold (-) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1">
+	<!-- ============================== -->
+	<!-- TODO -->
+	<!-- ============================== -->
+	<!--
+	* Make rpg:philosophy of type db:section (or something similar) to allow for better formatting
+	-->
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="base.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Path" type="rpg:PathType"/>
+	<xs:element name="philosophy" type="xs:string"/>
+	<xs:element name="path-level" type="rpg:path-levelType"/>
+	<!-- ============================== -->
+	<!-- Complex Type -->
+	<!-- ============================== -->
+	<xs:complexType name="PathType">
+		<xs:sequence>
+		<!--
+			<xs:group ref="rpg:header" minOccurs="0"/>
+		-->
+			<xs:element ref="rpg:header" minOccurs="0"/>
+			<xs:element ref="rpg:name"/>
+			<xs:element ref="rpg:philosophy" minOccurs="0"/>
+			<xs:element ref="rpg:path-level" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="path-levelType">
+		<xs:sequence>
+			<xs:element ref="rpg:name"/>
+			<xs:element name="level-number" type="xs:integer" minOccurs="0"/>
+			<xs:element ref="rpg:description" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Geir Atle Hegsvold (Intrum Justitia AS) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified" version="0.0.1">
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="http://www.oasis-open.org/docbook/xmlschema/1.0b1/docbook.xsd"/>
+	<xs:include schemaLocation="base.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="Campaign" type="rpg:CampaignType"/>
+	<xs:element name="adventure-list" type="rpg:adventure-listType"/>
+	<xs:element name="Adventure" type="rpg:AdventureType"/>
+	<!-- ============================== -->
+	<!-- Complex Types -->
+	<!-- ============================== -->
+	<xs:complexType name="CampaignType">
+		<xs:sequence>
+			<!--
+			<xs:group ref="rpg:header" minOccurs="0"/>
+			-->
+			<xs:element ref="rpg:header" minOccurs="0"/>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element ref="rpg:adventure-list" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="adventure-listType">
+		<xs:sequence>
+			<xs:element ref="rpg:Adventure"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================== -->
+	<xs:complexType name="AdventureType">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:group ref="rpg:chapter.class"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

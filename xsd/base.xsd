@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by Geir Atle Hegsvold (-) -->
+<xs:schema xmlns:rpg="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" elementFormDefault="qualified">
+	<!-- ============================== -->
+	<!-- Includes -->
+	<!-- ============================== -->
+	<xs:include schemaLocation="http://www.oasis-open.org/docbook/xmlschema/1.0b1/docbook.xsd"/>
+	<!-- ============================== -->
+	<!-- Global Elements -->
+	<!-- ============================== -->
+	<xs:element name="version" type="xs:string"/>
+	<xs:element name="setting" type="xs:string"/>
+	<xs:element name="system" type="xs:string"/>
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="description" type="xs:string"/>
+	<!-- ============================== -->
+	<!-- Groups -->
+	<!-- ============================== -->
+	<xs:group name="header">
+		<xs:sequence>
+			<xs:element ref="rpg:author" minOccurs="0"/>
+			<xs:element ref="rpg:system" minOccurs="0"/>
+			<xs:element ref="rpg:setting" minOccurs="0"/>
+			<xs:element ref="rpg:version" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

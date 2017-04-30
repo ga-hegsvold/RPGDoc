@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Campaign xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ../xsd/Campaign.xsd">
+	<author>
+		<firstname>Geir Atle</firstname>
+		<surname>Hegsvold</surname>
+	</author>
+	<system>Dragonnet RPG</system>
+	<setting>Planescape</setting>
+	<version>1.0</version>
+	<title>The Campaign</title>
+	<adventure-list>
+		<Adventure>
+			<title>Tne First Adventure</title>
+			<chapter>
+				<title>Chapter 1</title>
+				<para>
+				This is how it all began...
+				</para>
+			</chapter>
+		</Adventure>
+	</adventure-list>
+</Campaign>

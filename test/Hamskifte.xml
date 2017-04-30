@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/PathHTML.xslt"?>
+<Path xmlns="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://heim.ifi.uio.no/gahegsvo/rpg/RPGDoc ../xsd/Path.xsd">
+	<author><firstname>Geir Atle</firstname><surname>Hegsvold</surname></author>
+	<system>Storyteller</system>
+	<setting>Mage</setting>
+	<version>1.0</version>
+	<name>Hamskifte</name>
+	<philosophy>
+	Ved å ta på seg en skapnings ham og dermed få maksimal
+	assosiasjon med den, kan man forvandle seg til skapningen.
+	Den som gjør hamskiftet vil dermed få de egenskapene skapningen har
+	eller assosieres med.
+
+	[newline]
+	Fokus/metode:
+	Flåing og evt etterbehandling av hammen for langsiktig bruk.
+	Ferske ubehandla hammer har mer kraft enn ubehandla hammer, men krafta
+	fra ferske hammer varer bare for en kort stund.
+	Absorbering av fokusert essens ved å "operere" inn i egen kropp en del
+	av skapningen man vil ha egenskapene fra - ofte forseglet med Runer for
+	å gjøre effekten permanent.
+
+	[newline]
+	Når man forvandler seg til skapninger man har absorbert essensen av,
+	skjer gjerne forvandlingen ved at den nåværende hammen "skrelles" av og
+	den nye kommer til syne - på samme måte som en slange skifter skinn.
+
+	[newline]
+	Transformasjonen kan sees på som en slags gjenfødelsesprosess ved at den
+	nåværende hammen "dør" og man gjenfødes i den nye.
+	</philosophy>
+	<path-level>
+		<name>Initiate</name>
+		<level-number>1</level-number>
+		<description>Midlertidig få egenskapene fra en skapning.</description>
+	</path-level>
+	<path-level>
+		<name>Confident</name>
+		<level-number>2</level-number>
+		<description>Ta på ham med omtrent samme størrelse som seg selv.</description>
+	</path-level>
+	<path-level>
+		<name>Learned</name>
+		<level-number>3</level-number>
+		<description>
+		Ta på hvilke som helst ham. Absorbere essensen av skapninger -
+		trenger ikke lenger en fysisk ham. Delvis hamskifte.
+		</description>
+	</path-level>
+	<path-level>
+		<name>Master</name>
+		<level-number>4</level-number>
+		<description>
+		Kombinere hammer fra forskjellige skapninger - må ha
+		skapningens fysiske ham eller ha absorbert skapningens essens.
+		</description>
+	</path-level>
+	<path-level>
+		<name>Oracle</name>
+		<level-number>5</level-number>
+		<description>Har essensen av ALLE!</description>
+	</path-level>
+</Path>
+

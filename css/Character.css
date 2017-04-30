@@ -1,0 +1,92 @@
+body
+{
+    background-color: White;
+    font-family: Papyrus;
+    font-size: 8pt;
+}
+div.Character 
+{
+    border: solid medium red;
+}
+table 
+{
+    border: solid medium;
+/*
+    border-width: 0px;
+*/
+}
+
+table.Character 
+{
+}
+table.characteristics 
+{
+    border-color: Blue;
+}
+table.talents 
+{
+    border-color: Orange;
+}
+table.skills 
+{
+    border-color: Green;
+}
+/***********/
+table.attribute-list 
+{
+    font-family: Exocet;
+    text-align: left;
+	width: 100%;
+}
+th
+{
+    background-color: Black;
+    color: White;
+    font-family: Exocet;
+    padding: 2px;
+}
+td 
+{
+    border: solid thin;
+/*
+    border-width: 0px;
+*/
+}
+td.Attribute
+{
+    font-size: small;
+}
+span.Specialty
+{
+    font-style: italic;
+}
+.heading1
+{
+    font-size: xx-large;
+    font-variant: small-caps;
+}
+.heading2
+{
+    font-size: x-large;
+}
+.heading3
+{
+    font-size: large;
+}
+.signature 
+{
+    font-family: Papyrus;
+    font-size: xx-small;
+}
+th#skill
+{
+    text-align: left;
+}
+td#abbr 
+{
+    text-align: center;
+}
+td#value 
+{
+    text-align: center;
+}
