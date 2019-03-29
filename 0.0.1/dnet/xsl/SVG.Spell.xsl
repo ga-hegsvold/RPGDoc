@@ -164,5 +164,14 @@
 				<xsl:value-of select="."/>
 			</tspan>
 		</text>
+		<!--
+		<text xmlns="http://www.w3.org/2000/svg">
+		<foreignObject  x="20" y="{$y}" width="200" height="125">
+			 <div class="plain-text" xmlns="http://www.w3.org/1999/xhtml">
+				<xsl:value-of select="."/>
+			 </div>
+		</foreignObject>
+		</text>
+		-->
 	</xsl:template>
 </xsl:stylesheet>
